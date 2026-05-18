@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGF Show - Gincana Final</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        :root {
+            --primary: #1c2833;
+            --secondary: #f1c40f;
+            --petroleo: #2e4a66;
+            --text: #ffffff;
+            --correct: #27ae60;
+            --wrong: #e74c3c;
+            --selected: #3498db;
+            --disabled: #7f8c8d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--petroleo);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .game-container {
+            width: 95%;
+            max-width: 1000px;
+            background: rgba(28, 40, 51, 0.98);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .screen { display: none; }
+        .active { display: block; }
+
+        .info-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .badge {
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .badge-theme { background: var(--selected); }
+        .badge-diff { background: #8e44ad; }
+        .badge-points { background: var(--correct); color: white; font-size: 1.2rem; }
+
+        .question-box {
+            font-size: 2.2rem;
+            line-height: 1.3;
+            margin: 30px 0;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .timer-display {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--secondary);
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .timer-display.danger { color: var(--wrong); animation: shake 0.5s infinite; }
+        .timer-display.idle { opacity: 0.4; }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .option-btn {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 3px solid rgba(255,255,255,0.2);
+            padding: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 15px;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .option-btn:hover:not(.locked) { background: rgba(255,255,255,0.2); border-color: white; }
+        .option-btn.selected { border-color: var(--selected); background: rgba(52, 152, 219, 0.3); }
+        .option-btn.correct { background: var(--correct) !important; border-color: #2ecc71 !important; }
+        .option-btn.wrong { background: var(--wrong) !important; border-color: #c0392b !important; }
+
+        .main-btn {
+            background: var(--secondary);
+            color: #000;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(241, 196, 15, 0.4);
+            transition: transform 0.2s;
+        }
+
+        /* Botão Última Pergunta (Minúsculo) */
+        #btn-final-boss {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: transparent;
+            color: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 5px 10px;
+            font-size: 0.6rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        #btn-final-boss:hover {
+            color: var(--wrong);
+            border-color: var(--wrong);
+            background: rgba(231, 76, 60, 0.1);
+        }
+
+        .file-input-wrapper {
+            border: 3px dashed rgba(255,255,255,0.2);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Estilos da Roleta Copiada */
+        #roulette-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+            margin: 0 auto 20px;
+            aspect-ratio: 1;
+        }
+
+        #wheel-svg {
+            width: 100%;
+            height: 100%;
+            transform-origin: center center;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+        }
+
+        #wheel-marker {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            border-top: 32px solid var(--secondary);
+            z-index: 10;
+        }
+
+        .content-hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+        <div id="screen-load" class="screen active">
+            <h1 style="font-size: 3.5rem; margin-bottom: 10px;">DGF SHOW 🔔</h1>
+            <p style="opacity: 0.7; margin-bottom: 30px;">MODO GINCANA</p>
+            <div class="file-input-wrapper">
+                <input type="file" id="input-json" accept=".json">
+            </div>
+            <button id="btn-start-game" class="main-btn" style="display:none;" onclick="startGame()">Iniciar 🚀</button>
+        </div>
+
+        <div id="screen-quiz" class="screen">
+            <div class="info-header">
+                <div>
+                    <span class="badge badge-theme" id="display-theme">TEMA</span>
+                    <span class="badge badge-diff" id="display-diff">DIFICULDADE</span>
+                </div>
+                <div>
+                    <span id="q-counter" style="margin-right: 15px; opacity: 0.7; font-weight: bold;">PERGUNTA</span>
+                    <span class="badge badge-points" id="display-points">0 PTS</span>
+                </div>
+            </div>
+
+            <!-- Roleta Copiada Inserida Aqui -->
+            <div id="roulette-wrapper">
+                <div id="wheel-marker"></div>
+                <svg id="wheel-svg" viewBox="0 0 100 100">
+                    <g id="wheel-slices"></g>
+                    <circle cx="50" cy="50" r="10" fill="var(--primary)" stroke="white" stroke-width="1"/>
+                    <circle cx="50" cy="50" r="5" fill="var(--secondary)"/>
+                </svg>
+            </div>
+
+            <!-- Bloco de perguntas agrupado para controle de exibição dinâmica -->
+            <div id="quiz-content-block" class="content-hidden">
+                <div class="timer-display idle" id="timer">15</div>
+                <div class="question-box" id="question-text"></div>
+                <div class="options-grid" id="options-container"></div>
+            </div>
+
+            <div style="margin-top: 40px; display: flex; justify-content: center; gap: 20px;">
+                <button class="main-btn" id="btn-spin" onclick="spinWheel()" style="background: #9b59b6; color: white;">Girar Roleta 🎲</button>
+                <button class="main-btn" id="btn-run-timer" onclick="startTimerCountdown()" style="background: #e67e22; color: white; display: none;">Iniciar Tempo ⏱️</button>
+                <button class="main-btn" id="btn-reveal" onclick="revealAnswer()" style="background: #3498db; color: white; display: none;">Revelar Resposta 👁️</button>
+                <button class="main-btn" id="btn-next" onclick="nextQuestion()" style="display:none;">Próxima Pergunta ➔</button>
+            </div>
+
+            <button id="btn-final-boss" onclick="triggerExtremo()">Ultima Pergunta</button>
+        </div>
+
+        <div id="screen-end" class="screen">
+            <h1 style="font-size: 4rem; color: var(--secondary);">FIM! 🏆</h1>
+            <button class="main-btn" onclick="location.reload()">Reiniciar 🔄</button>
+        </div>
+    </div>
+
+    <script>
+        let data = {};
+        let allThemes = [];
+        let currentQCount = 0;
+        let timeLeft = 15;
+        let timerInterval = null;
+        let currentQuestionObj = null;
+        let selectedIdx = null;
+        let isLocked = false;
+        let usedQuestionsKeys = new Set();
+        let totalRotation = 0;
+
+        const pointsMap = {
+            "muito_facil": 10, "facil": 20, "medio": 30, "dificil": 50, "muito_dificil": 100, "extremo": 1000
+        };
+
+        const normalDifficultyPool = [
+            "muito_facil", "muito_facil", "muito_facil",
+            "facil", "facil", "facil",
+            "medio", "medio",
+            "dificil",
+            "muito_dificil"
+        ];
+
+        document.getElementById('input-json').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    data = JSON.parse(event.target.result);
+                    allThemes = Object.keys(data);
+                    document.getElementById('btn-start-game').style.display = "inline-block";
+                } catch (err) { alert("Erro no JSON."); }
+            };
+            reader.readAsText(file);
+        });
+
+        function startGame() {
+            currentQCount = 0;
+            usedQuestionsKeys.clear();
+            document.getElementById('screen-load').classList.remove('active');
+            document.getElementById('screen-quiz').classList.add('active');
+            initWheel();
+            prepareNextSpin();
+        }
+
+        // Funções de Inicialização e Desenho da Roleta Copiada
+        function initWheel() {
+            const container = document.getElementById("wheel-slices");
+            container.innerHTML = "";
+            const sliceAngle = 360 / allThemes.length;
+            const colors = ["#e74c3c", "#3498db", "#2ecc71", "#9b59b6", "#f1c40f", "#e67e22", "#1abc9c"];
+
+            allThemes.forEach((theme, i) => {
+                const startAngle = i * sliceAngle;
+                const endAngle = (i + 1) * sliceAngle;
+                
+                const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                path.setAttribute("d", createArc(50, 50, 48, startAngle, endAngle));
+                path.setAttribute("fill", colors[i % colors.length]);
+                container.appendChild(path);
+
+                const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                const midAngle = startAngle + (sliceAngle / 2);
+                
+                const rad = (midAngle - 90) * (Math.PI / 180);
+                const x = 50 + 28 * Math.cos(rad);
+                const y = 50 + 28 * Math.sin(rad);
+
+                text.setAttribute("x", x);
+                text.setAttribute("y", y);
+                text.setAttribute("fill", "white");
+                text.setAttribute("font-size", "2.8");
+                text.setAttribute("font-weight", "bold");
+                text.setAttribute("text-anchor", "middle");
+                text.setAttribute("transform", `rotate(${midAngle} ${x} ${y})`);
+                text.textContent = theme.toUpperCase();
+                container.appendChild(text);
+            });
+        }
+
+        function createArc(x, y, r, startAngle, endAngle) {
+            const polarToCartesian = (angle) => {
+                const rad = (angle - 90) * (Math.PI / 180.0);
+                return { x: x + r * Math.cos(rad), y: y + r * Math.sin(rad) };
+            };
+            const start = polarToCartesian(endAngle);
+            const end = polarToCartesian(startAngle);
+            return `M ${x} ${y} L ${start.x} ${start.y} A ${r} ${r} 0 0 0 ${end.x} ${end.y} Z`;
+        }
+
+        function prepareNextSpin() {
+            document.getElementById('roulette-wrapper').classList.remove('content-hidden');
+            document.getElementById('quiz-content-block').classList.add('content-hidden');
+
+            document.getElementById('question-text').textContent = "";
+            document.getElementById('options-container').innerHTML = "";
+            
+            // ALTERAÇÕES SOLICITADAS: Reseta o cabeçalho de informações (inclusive pontos) para o padrão
+            document.getElementById('display-theme').textContent = "TEMA";
+            document.getElementById('display-diff').textContent = "DIFICULDADE";
+            document.getElementById('display-points').textContent = "0 PTS";
+            
+            document.getElementById('btn-spin').style.display = "inline-block";
+            document.getElementById('btn-spin').disabled = false;
+            document.getElementById('btn-run-timer').style.display = "none";
+            document.getElementById('btn-reveal').style.display = "none";
+            document.getElementById('btn-next').style.display = "none";
+        }
+
+        // Lógica de Giro Baseada na Roleta Copiada
+        function spinWheel() {
+            if (checkIfNormalBaseIsOver()) {
+                alert("Base normal esgotada! Use o botão 'Ultima Pergunta'.");
+                return;
+            }
+
+            const btn = document.getElementById("btn-spin");
+            btn.disabled = true;
+
+            const winnerIndex = Math.floor(Math.random() * allThemes.length);
+            const chosenTheme = allThemes[winnerIndex];
+
+            const sliceAngle = 360 / allThemes.length;
+            const targetRotation = (360 - (winnerIndex * sliceAngle)) - (sliceAngle / 2);
+            
+            totalRotation += (360 * 8) + (targetRotation - (totalRotation % 360));
+
+            anime({
+                targets: '#wheel-svg',
+                rotate: totalRotation,
+                duration: 5000,
+                easing: 'easeOutQuint',
+                complete: () => {
+                    btn.style.display = "none";
+                    document.getElementById('roulette-wrapper').classList.add('content-hidden');
+                    document.getElementById('quiz-content-block').classList.remove('content-hidden');
+                    loadRandomQuestion(false, chosenTheme);
+                }
+            });
+        }
+
+        function loadRandomQuestion(isExtremo = false, forcedTheme = null) {
+            if (!isExtremo && checkIfNormalBaseIsOver()) {
+                alert("Base normal esgotada! Use o botão 'Ultima Pergunta'.");
+                return;
+            }
+
+            currentQCount++;
+            isLocked = false;
+            selectedIdx = null;
+
+            let randomTheme, randomDiff, pool, questionIdx, key;
+            let found = false;
+
+            for (let i = 0; i < 200; i++) {
+                randomTheme = forcedTheme ? forcedTheme : allThemes[Math.floor(Math.random() * allThemes.length)];
+                randomDiff = isExtremo ? "extremo" : normalDifficultyPool[Math.floor(Math.random() * normalDifficultyPool.length)];
+                
+                pool = data[randomTheme][randomDiff] || [];
+
+                if (pool.length > 0) {
+                    questionIdx = Math.floor(Math.random() * pool.length);
+                    key = `${randomTheme}|${randomDiff}|${questionIdx}`;
+
+                    if (!usedQuestionsKeys.has(key)) {
+                        usedQuestionsKeys.add(key);
+                        currentQuestionObj = pool[questionIdx];
+                        found = true;
+                        break;
+                    }
+                }
+                if (forcedTheme) forcedTheme = null;
+            }
+
+            if (!found) {
+                alert("Nenhuma pergunta disponível para este critério.");
+                prepareNextSpin();
+                return;
+            }
+
+            // Interface
+            document.getElementById('q-counter').textContent = isExtremo ? "GRANDE FINAL" : `PERGUNTA ${currentQCount}`;
+            document.getElementById('display-theme').textContent = randomTheme.toUpperCase();
+            document.getElementById('display-diff').textContent = randomDiff.replace("_", " ").toUpperCase();
+            document.getElementById('display-points').textContent = `${pointsMap[randomDiff]} PTS`;
+            document.getElementById('question-text').textContent = currentQuestionObj.q;
+            
+            const container = document.getElementById('options-container');
+            container.innerHTML = "";
+            currentQuestionObj.o.forEach((opt, i) => {
+                const btn = document.createElement('button');
+                btn.className = "option-btn";
+                btn.id = `opt-${i}`;
+                btn.innerHTML = `<strong>${String.fromCharCode(65 + i)})</strong> ${opt}`;
+                btn.onclick = () => selectOption(i);
+                container.appendChild(btn);
+            });
+
+            clearInterval(timerInterval);
+            timeLeft = 15;
+            document.getElementById('timer').textContent = timeLeft;
+            document.getElementById('timer').className = "timer-display idle";
+            document.getElementById('btn-run-timer').style.display = "inline-block";
+            document.getElementById('btn-reveal').style.display = "none";
+            document.getElementById('btn-next').style.display = "none";
+        }
+
+        function triggerExtremo() {
+            if (confirm("Deseja iniciar uma pergunta de nível EXTREMO?")) {
+                document.getElementById('roulette-wrapper').classList.add('content-hidden');
+                document.getElementById('quiz-content-block').classList.remove('content-hidden');
+                loadRandomQuestion(true);
+            }
+        }
+
+        function checkIfNormalBaseIsOver() {
+            let totalNormal = 0;
+            allThemes.forEach(t => {
+                Object.keys(data[t]).forEach(d => {
+                    if (d !== "extremo") totalNormal += data[t][d].length;
+                });
+            });
+            let usedNormal = Array.from(usedQuestionsKeys).filter(k => !k.includes("extremo")).length;
+            return usedNormal >= totalNormal;
+        }
+
+        function selectOption(idx) {
+            if(isLocked) return;
+            selectedIdx = idx;
+            document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+            document.getElementById(`opt-${idx}`).classList.add('selected');
+        }
+
+        function startTimerCountdown() {
+            document.getElementById('btn-run-timer').style.display = "none";
+            document.getElementById('btn-reveal').style.display = "inline-block";
+            const timerEl = document.getElementById('timer');
+            timerEl.classList.remove('idle');
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                timerEl.textContent = timeLeft;
+                if (timeLeft <= 5) timerEl.classList.add('danger');
+                if (timeLeft <= 0) { clearInterval(timerInterval); timerEl.textContent = "TEMPO!"; }
+            }, 1000);
+        }
+
+        function revealAnswer() {
+            isLocked = true;
+            clearInterval(timerInterval);
+            document.getElementById('timer').textContent = "";
+            const correctIndex = currentQuestionObj.a;
+            document.querySelectorAll('.option-btn').forEach(b => b.classList.add('locked'));
+            if (selectedIdx !== null) {
+                if (selectedIdx === correctIndex) document.getElementById(`opt-${selectedIdx}`).classList.add('correct');
+                else {
+                    document.getElementById(`opt-${selectedIdx}`).classList.add('wrong');
+                    document.getElementById(`opt-${correctIndex}`).classList.add('correct');
+                }
+            } else {
+                document.getElementById(`opt-${correctIndex}`).classList.add('correct');
+            }
+            document.getElementById('btn-reveal').style.display = "none";
+            document.getElementById('btn-next').style.display = "inline-block";
+        }
+
+        function nextQuestion() {
+            prepareNextSpin();
+        }
+    </script>
+</body>
+</html>
