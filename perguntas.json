@@ -1,0 +1,347 @@
+{
+  "História": {
+    "muito_facil": [
+      { "q": "Quem descobriu o Brasil em 1500?", "o": ["Pedro Álvares Cabral", "Cristóvão Colombo", "Vasco da Gama", "Américo Vespúcio"], "a": 0 },
+      { "q": "Quem proclamou a Independência do Brasil?", "o": ["Dom Pedro II", "Dom Pedro I", "Princesa Isabel", "Tiradentes"], "a": 1 },
+      { "q": "Qual princesa assinou a Lei Áurea?", "o": ["Carlota Joaquina", "Princesa Isabel", "Maria I", "Leopoldina"], "a": 1 },
+      { "q": "Qual foi a primeira capital do Brasil?", "o": ["Rio de Janeiro", "Brasília", "Salvador", "São Paulo"], "a": 2 },
+      { "q": "Quem foi o herói da Inconfidência Mineira?", "o": ["Tiradentes", "Bento Gonçalves", "Duque de Caxias", "Zumbi"], "a": 0 },
+      { "q": "Em que ano o Brasil foi descoberto?", "o": ["1492", "1500", "1588", "1600"], "a": 1 },
+      { "q": "Quem vivia no Brasil antes dos portugueses?", "o": ["Viking", "Incas", "Indígenas", "Astecas"], "a": 2 },
+      { "q": "Qual era a forma de governo do Brasil antes da República?", "o": ["Ditadura", "Parlamentarismo", "Monarquia", "Anarquia"], "a": 2 },
+      { "q": "Qual documento libertou os escravos?", "o": ["Lei Áurea", "Constituição", "Lei Pelé", "Lei Seca"], "a": 0 },
+      { "q": "Onde morava a Família Real ao chegar no Brasil?", "o": ["Fazendas", "Palácios/Quintas", "Navios", "Igrejas"], "a": 1 }
+    ],
+    "facil": [
+      { "q": "Qual guerra envolveu Brasil, Argentina e Uruguai contra o Paraguai?", "o": ["Guerra Civil", "Guerra do Paraguai", "Guerra de Canudos", "Guerra Fria"], "a": 1 },
+      { "q": "Quem foi o líder do Quilombo dos Palmares?", "o": ["Machado de Assis", "Aleijadinho", "Zumbi", "Pelé"], "a": 2 },
+      { "q": "Qual ciclo econômico seguiu o do ouro no Brasil?", "o": ["Ciclo do Café", "Ciclo do Algodão", "Ciclo da Soja", "Ciclo do Milho"], "a": 0 },
+      { "q": "Quem foi o 'Patrono do Exército Brasileiro'?", "o": ["Floriano Peixoto", "Duque de Caxias", "General Osório", "Castelo Branco"], "a": 1 },
+      { "q": "Em que dia se comemora a Proclamação da República?", "o": ["7 de Setembro", "15 de Novembro", "1 de Maio", "25 de Dezembro"], "a": 1 },
+      { "q": "Quem foi o presidente que construiu Brasília?", "o": ["Getúlio Vargas", "Juscelino Kubitschek", "Jânio Quadros", "Sarney"], "a": 1 },
+      { "q": "Qual presidente criou a Petrobras?", "o": ["Lula", "Fernando Henrique", "Getúlio Vargas", "Itamar Franco"], "a": 2 },
+      { "q": "Qual era o nome do Brasil logo após o descobrimento?", "o": ["Terra de Santa Cruz", "Pindorama", "Ilha de Vera Cruz", "Terra Brasilis"], "a": 2 },
+      { "q": "Qual movimento queria a independência de Pernambuco em 1817?", "o": ["Revolução Pernambucana", "Cabanagem", "Sabinada", "Balaiada"], "a": 0 },
+      { "q": "Qual foi a revolta contra a vacina obrigatória no Rio?", "o": ["Revolta da Chibata", "Revolta da Vacina", "Farroupilha", "Cangaço"], "a": 1 }
+    ],
+    "medio": [
+      { "q": "Qual civilização construiu as Pirâmides de Gizé?", "o": ["Maias", "Gregos", "Egípcios", "Fenícios"], "a": 2 },
+      { "q": "O que dividiu a Alemanha durante a Guerra Fria?", "o": ["Muro de Berlim", "Muro de Munique", "Cortina de Ferro", "Muro de Adriano"], "a": 0 },
+      { "q": "Quem foi o principal líder da Reforma Protestante?", "o": ["João Calvino", "Martinho Lutero", "Henrique VIII", "Papa Leão X"], "a": 1 },
+      { "q": "Qual navio 'inafundável' afundou em 1912?", "o": ["Lusitania", "Titanic", "Britannic", "Bismarck"], "a": 1 },
+      { "q": "Em quais cidades os EUA jogaram bombas atômicas?", "o": ["Tóquio e Osaka", "Hiroshima e Nagasaki", "Pequim e Seul", "Berlim e Roma"], "a": 1 },
+      { "q": "Quem foi o general francês que se tornou Imperador?", "o": ["Luís XIV", "Napoleão Bonaparte", "Carlos Magno", "De Gaulle"], "a": 1 },
+      { "q": "Qual cidade grega era famosa por seus guerreiros?", "o": ["Atenas", "Esparta", "Tebas", "Corinto"], "a": 1 },
+      { "q": "Qual evento iniciou a 1ª Guerra Mundial?", "o": ["Invasão da Polônia", "Assassinato de Franz Ferdinand", "Quebra da Bolsa", "Revolução Russa"], "a": 1 },
+      { "q": "O que foi a Revolução Industrial?", "o": ["Mudança para máquinas", "Guerra civil", "Revolução artística", "Descoberta da América"], "a": 0 },
+      { "q": "Qual foi o primeiro código de leis escritas?", "o": ["Código Civil", "Código de Hamurabi", "Constituição", "Lei das XII Tábuas"], "a": 1 }
+    ],
+    "dificil": [
+      { "q": "Qual dinastia governou a Rússia por 300 anos até 1917?", "o": ["Habsburgo", "Tudor", "Romanov", "Bourbon"], "a": 2 },
+      { "q": "Quem escreveu 'O Manifesto Comunista' com Marx?", "o": ["Engels", "Lenin", "Stalin", "Trotsky"], "a": 0 },
+      { "q": "Qual cidade foi capital de 3 grandes impérios?", "o": ["Roma", "Cairo", "Istambul", "Atenas"], "a": 2 },
+      { "q": "Qual guerra durou de 1337 a 1453?", "o": ["Guerra dos Trinta Anos", "Guerra dos Sete Anos", "Guerra dos Cem Anos", "Cruzadas"], "a": 2 },
+      { "q": "Quem foi o 'Rei Sol' da França?", "o": ["Luís XIV", "Luís XVI", "Napoleão", "Francisco I"], "a": 0 },
+      { "q": "Qual foi a principal rota comercial entre Europa e Ásia?", "o": ["Rota do Ouro", "Rota da Seda", "Rota das Especiarias", "Caminho Real"], "a": 1 },
+      { "q": "Quem propôs a Teoria da Evolução?", "o": ["Mendel", "Darwin", "Lamarck", "Pasteur"], "a": 1 },
+      { "q": "Quem foi o líder mongol que criou o maior império?", "o": ["Átila", "Gengis Khan", "Kublai Khan", "Tamerlão"], "a": 1 },
+      { "q": "Quem assinou a Magna Carta em 1215?", "o": ["Ricardo Coração de Leão", "João Sem Terra", "Eduardo I", "Henrique VIII"], "a": 1 },
+      { "q": "Qual filósofo foi mestre de Alexandre, o Grande?", "o": ["Sócrates", "Platão", "Aristóteles", "Epicuro"], "a": 2 }
+    ],
+    "muito_dificil": [
+      { "q": "Qual civilização usava a escrita cuneiforme?", "o": ["Egípcia", "Suméria", "Maia", "Chinesa"], "a": 1 },
+      { "q": "Em que batalha Napoleão foi definitivamente derrotado?", "o": ["Batalha de Austerlitz", "Batalha de Waterloo", "Batalha de Leipzig", "Batalha de Trafalgar"], "a": 1 },
+      { "q": "Quem foi o imperador bizantino que codificou as leis romanas?", "o": ["Constantino", "Justiniano I", "Teodósio", "Heráclio"], "a": 1 },
+      { "q": "Qual califado governou a Espanha na Idade Média?", "o": ["Abássida", "Omíada", "Otomano", "Fatímida"], "a": 1 },
+      { "q": "Qual evento iniciou a Revolução Francesa?", "o": ["Morte do Rei", "Queda da Bastilha", "Golpe de Napoleão", "Guerra dos Sete Anos"], "a": 1 },
+      { "q": "Quem escreveu 'A Riqueza das Nações' em 1776?", "o": ["David Ricardo", "John Locke", "Adam Smith", "Karl Marx"], "a": 2 },
+      { "q": "Qual tratado encerrou a Primeira Guerra Mundial?", "o": ["Tratado de Tordesilhas", "Tratado de Versalhes", "Tratado de Viena", "Pacto de Varsóvia"], "a": 1 },
+      { "q": "Qual faraó egípcio tentou impor o monoteísmo (Aton)?", "o": ["Ramsés II", "Tutancâmon", "Aquenáton", "Quéops"], "a": 2 },
+      { "q": "Qual foi o shogunato que isolou o Japão do mundo (Edo)?", "o": ["Ashikaga", "Tokugawa", "Kamakura", "Meiji"], "a": 1 },
+      { "q": "Qual papa excomungou Martinho Lutero?", "o": ["Leão X", "Clemente VII", "Paulo III", "Júlio II"], "a": 0 }
+    ],
+    "extremo": [
+      { "q": "Qual foi o estopim da Revolta da Chibata em 1910?", "o": ["A execução de um marinheiro", "As 250 chibatadas em Marcelino Rodrigues", "O aumento da jornada", "A proibição de marinheiros negros"], "a": 1 },
+      { "q": "Quem redigiu a Constituição Outorgada de 1824?", "o": ["José Bonifácio", "Um Conselho de Estado de D. Pedro I", "A Assembleia Constituinte", "Joaquim Gonçalves Ledo"], "a": 1 },
+      { "q": "Em qual contexto ocorreu a Confederação do Equador em 1824?", "o": ["Reação ao autoritarismo de D. Pedro I", "Apoio à província da Cisplatina", "Manifestação contra a abolição", "Movimento financiado pelo café"], "a": 0 },
+      { "q": "Qual o objetivo do Tratado de Methuen (1703)?", "o": ["Delimitar fronteiras", "Troca de panos ingleses por vinhos portugueses", "Defesa contra holandeses", "Proibir o tráfico negreiro"], "a": 1 },
+      { "q": "Quem governou o Brasil no 'Governo Provisório' (1930-1934)?", "o": ["Washington Luís", "Getúlio Vargas", "Júlio Prestes", "Hermes da Fonseca"], "a": 1 }
+    ]
+  },
+  "Geografia": {
+    "muito_facil": [
+      { "q": "Qual a capital do Brasil?", "o": ["São Paulo", "Rio de Janeiro", "Brasília", "Curitiba"], "a": 2 },
+      { "q": "Qual o maior continente do mundo?", "o": ["África", "América", "Ásia", "Europa"], "a": 2 },
+      { "q": "Qual país é o 'País do Sol Nascente'?", "o": ["China", "Japão", "Coreia do Sul", "Tailândia"], "a": 1 },
+      { "q": "Qual o maior oceano do mundo?", "o": ["Atlântico", "Índico", "Pacífico", "Ártico"], "a": 2 },
+      { "q": "Qual direção o sol nasce?", "o": ["Norte", "Sul", "Leste", "Oeste"], "a": 2 },
+      { "q": "Em qual país fica a Estátua da Liberdade?", "o": ["Inglaterra", "França", "Canadá", "EUA"], "a": 3 },
+      { "q": "Qual a maior floresta tropical do mundo?", "o": ["Mata Atlântica", "Savana", "Amazônia", "Taiga"], "a": 2 },
+      { "q": "Qual o lugar mais frio da Terra?", "o": ["Ártico", "Alasca", "Antártida", "Rússia"], "a": 2 },
+      { "q": "Qual o maior deserto de areia do mundo?", "o": ["Atacama", "Saara", "Gobi", "Kalahari"], "a": 1 },
+      { "q": "Qual o nome do planeta em que vivemos?", "o": ["Marte", "Terra", "Vênus", "Júpiter"], "a": 1 }
+    ],
+    "facil": [
+      { "q": "Qual a capital da França?", "o": ["Londres", "Paris", "Roma", "Berlim"], "a": 1 },
+      { "q": "Qual país faz fronteira ao sul com o Brasil?", "o": ["Colômbia", "Venezuela", "Uruguai", "Guiana"], "a": 2 },
+      { "q": "Qual país tem formato de uma bota?", "o": ["Espanha", "Grécia", "Itália", "Portugal"], "a": 2 },
+      { "q": "Qual rio atravessa o Egito?", "o": ["Amazonas", "Nilo", "Ganges", "Sena"], "a": 1 },
+      { "q": "Em qual cidade fica a Torre Eiffel?", "o": ["Nova York", "Londres", "Paris", "Roma"], "a": 2 },
+      { "q": "Qual a capital da Argentina?", "o": ["Santiago", "Montevidéu", "Buenos Aires", "Lima"], "a": 2 },
+      { "q": "Em qual continente fica a Alemanha?", "o": ["Ásia", "Europa", "África", "Oceania"], "a": 1 },
+      { "q": "Qual país é famoso pelos canais de Veneza?", "o": ["França", "Holanda", "Itália", "Grécia"], "a": 2 },
+      { "q": "Qual país tem a folha de bordo na bandeira?", "o": ["EUA", "Canadá", "Japão", "China"], "a": 1 },
+      { "q": "Qual país construiu a Grande Muralha?", "o": ["Índia", "Japão", "China", "Tailândia"], "a": 2 }
+    ],
+    "medio": [
+      { "q": "Qual o deserto mais seco do mundo?", "o": ["Saara", "Atacama", "Gobi", "Sonora"], "a": 1 },
+      { "q": "Qual a montanha mais alta do mundo?", "o": ["K2", "Monte Everest", "Kilimanjaro", "Aconcágua"], "a": 1 },
+      { "q": "Qual a capital da Austrália?", "o": ["Sydney", "Melbourne", "Camberra", "Perth"], "a": 2 },
+      { "q": "Qual o país mais populoso do mundo (2024)?", "o": ["China", "Índia", "EUA", "Indonésia"], "a": 1 },
+      { "q": "Qual linha divide a Terra em Norte e Sul?", "o": ["Trópico de Câncer", "Linha do Equador", "Meridiano de Greenwich", "Círculo Polar"], "a": 1 },
+      { "q": "Qual mar banha a Grécia e a Itália?", "o": ["Mar Vermelho", "Mar Mediterrâneo", "Mar Morto", "Mar Cáspio"], "a": 1 },
+      { "q": "Em qual cordilheira fica o Chile?", "o": ["Himalaia", "Alpes", "Andes", "Rocosas"], "a": 2 },
+      { "q": "Qual a capital do Canadá?", "o": ["Toronto", "Vancouver", "Ottawa", "Quebec"], "a": 2 },
+      { "q": "Qual canal liga o Atlântico ao Pacífico?", "o": ["Canal de Suez", "Canal do Panamá", "Canal da Mancha", "Canal de Corinto"], "a": 1 },
+      { "q": "Qual é a cidade mais populosa do Brasil?", "o": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"], "a": 1 }
+    ],
+    "dificil": [
+      { "q": "O Estreito de Gibraltar separa quais continentes?", "o": ["Ásia e Europa", "África e Europa", "América e Ásia", "África e Ásia"], "a": 1 },
+      { "q": "Qual cidade é o marco zero dos fusos horários?", "o": ["Paris", "Nova York", "Londres (Greenwich)", "Tóquio"], "a": 2 },
+      { "q": "Qual o rio sagrado da Índia?", "o": ["Tigre", "Eufrates", "Ganges", "Indo"], "a": 2 },
+      { "q": "Qual destes países é um enclave?", "o": ["Portugal", "Lesoto", "Nepal", "Mongólia"], "a": 1 },
+      { "q": "Qual país é conhecido como 'Terra do Gelo e Fogo'?", "o": ["Groenlândia", "Islândia", "Noruega", "Nova Zelândia"], "a": 1 },
+      { "q": "Qual o maior lago de água doce do mundo (superfície)?", "o": ["Lago Vitória", "Lago Superior", "Lago Baikal", "Mar Cáspio"], "a": 1 },
+      { "q": "Qual projeção de mapa distorce o tamanho dos polos?", "o": ["Peters", "Mercator", "Robinson", "Mollweide"], "a": 1 },
+      { "q": "Qual é a capital da Nigéria?", "o": ["Lagos", "Abuja", "Acra", "Nairobi"], "a": 1 },
+      { "q": "Em qual país fica a cidade de Marraquexe?", "o": ["Egito", "Marrocos", "Tunísia", "Argélia"], "a": 1 },
+      { "q": "Qual a capital da Suíça?", "o": ["Zurique", "Genebra", "Berna", "Basileia"], "a": 2 }
+    ],
+    "muito_dificil": [
+      { "q": "Onde fica a Fossa das Marianas?", "o": ["Oceano Índico", "Oceano Atlântico", "Oceano Pacífico", "Mar Vermelho"], "a": 2 },
+      { "q": "Qual a capital da Mongólia?", "o": ["Ulan Bator", "Astana", "Tashkent", "Bishkek"], "a": 0 },
+      { "q": "Qual o menor país do mundo?", "o": ["Mônaco", "Vaticano", "Nauru", "San Marino"], "a": 1 },
+      { "q": "Qual país possui o maior número de fusos horários?", "o": ["Rússia", "França", "China", "EUA"], "a": 1 },
+      { "q": "Qual o ponto mais alto da Europa?", "o": ["Mont Blanc", "Monte Elbrus", "Monte Etna", "Monte Olimpo"], "a": 1 },
+      { "q": "Qual a capital do Cazaquistão?", "o": ["Almaty", "Astana", "Ashgabat", "Dushanbe"], "a": 1 },
+      { "q": "Onde fica a cidade sagrada de Meca?", "o": ["Irã", "Iraque", "Arábia Saudita", "Egito"], "a": 2 },
+      { "q": "Qual estreito separa a Rússia dos EUA (Alasca)?", "o": ["Estreito de Bering", "Estreito de Cook", "Estreito de Magalhães", "Estreito de Ormuz"], "a": 0 },
+      { "q": "Onde fica o deserto de Gobi?", "o": ["África", "Ásia", "Austrália", "América do Norte"], "a": 1 },
+      { "q": "Qual o país com o maior número de ilhas?", "o": ["Indonésia", "Suécia", "Canadá", "Filipinas"], "a": 1 }
+    ],
+    "extremo": [
+      { "q": "O 'Escudo das Guianas' é composto principalmente por:", "o": ["Dobramentos modernos", "Rochas cristalinas pré-cambrianas", "Bacias sedimentares recentes", "Relevo vulcânico ativo"], "a": 1 },
+      { "q": "A 'Corrente de Humboldt' afeta qual região?", "o": ["Costa Leste do Brasil", "Costa Oeste da América do Sul", "Norte da África", "Sudeste Asiático"], "a": 1 },
+      { "q": "O que define o fenômeno da 'Inversão Térmica'?", "o": ["Aumento de chuva urbana", "Camada quente que impede dispersão de poluentes", "Massas de ar polar no asfalto", "Resfriamento do topo de prédios"], "a": 1 },
+      { "q": "Qual é o ponto mais setentrional (ao Norte) do Brasil?", "o": ["Oiapoque", "Monte Caburaí", "Ponta do Seixas", "Arroio Chuí"], "a": 1 },
+      { "q": "Qual país detém o maior número de fusos horários totais?", "o": ["Rússia", "França", "Estados Unidos", "China"], "a": 1 }
+    ]
+  },
+  "Ciências": {
+    "muito_facil": [
+      { "q": "Qual a fórmula química da água?", "o": ["CO2", "H2O", "O2", "NaCl"], "a": 1 },
+      { "q": "O Sol é um(a):", "o": ["Planeta", "Cometa", "Estrela", "Satélite"], "a": 2 },
+      { "q": "Qual cientista é famoso pela lei da gravidade?", "o": ["Einstein", "Newton", "Tesla", "Darwin"], "a": 1 },
+      { "q": "A Lua é um satélite natural de qual planeta?", "o": ["Marte", "Vênus", "Terra", "Júpiter"], "a": 2 },
+      { "q": "Como as plantas produzem seu próprio alimento?", "o": ["Respiração", "Digestão", "Fotossíntese", "Transpiração"], "a": 2 },
+      { "q": "Qual gás os seres humanos precisam para respirar?", "o": ["Nitrogênio", "Gás Carbônico", "Oxigênio", "Hélio"], "a": 2 },
+      { "q": "Qual órgão bombeia o sangue no corpo?", "o": ["Pulmão", "Fígado", "Coração", "Rim"], "a": 2 },
+      { "q": "Quantos ossos tem um adulto humano aproximadamente?", "o": ["100", "206", "300", "500"], "a": 1 },
+      { "q": "Qual o maior planeta do sistema solar?", "o": ["Saturno", "Netuno", "Terra", "Júpiter"], "a": 3 },
+      { "q": "Qual o estado físico da água no gelo?", "o": ["Líquido", "Gasoso", "Sólido", "Plasma"], "a": 2 }
+    ],
+    "facil": [
+      { "q": "O que significa a sigla DNA?", "o": ["Ácido Di-Nuclear", "Ácido Desoxirribonucleico", "Dado de Núcleo", "Distribuição Atômica"], "a": 1 },
+      { "q": "A que temperatura a água ferve?", "o": ["50°C", "80°C", "100°C", "120°C"], "a": 2 },
+      { "q": "Quem inventou a lâmpada elétrica?", "o": ["Graham Bell", "Nikola Tesla", "Thomas Edison", "Isaac Newton"], "a": 2 },
+      { "q": "Qual metal é líquido à temperatura ambiente?", "o": ["Ferro", "Ouro", "Mercúrio", "Prata"], "a": 2 },
+      { "q": "Qual parte do corpo controla o sistema nervoso?", "o": ["Coração", "Cérebro", "Estômago", "Músculos"], "a": 1 },
+      { "q": "O que é um animal carnívoro?", "o": ["Come plantas", "Come carne", "Come de tudo", "Não come"], "a": 1 },
+      { "q": "Qual a unidade de medida da potência elétrica?", "o": ["Volt", "Ampere", "Watt", "Ohm"], "a": 2 },
+      { "q": "Quantos planetas existem no sistema solar?", "o": ["7", "8", "9", "10"], "a": 1 },
+      { "q": "Qual cientista propôs a Teoria da Evolução?", "o": ["Mendel", "Darwin", "Pasteur", "Einstein"], "a": 1 },
+      { "q": "O que atrai o ferro?", "o": ["Plástico", "Vidro", "Ímã", "Madeira"], "a": 2 }
+    ],
+    "medio": [
+      { "q": "Qual a velocidade da luz aproximadamente?", "o": ["100.000 km/s", "300.000 km/s", "1.000.000 km/s", "50.000 km/s"], "a": 1 },
+      { "q": "O que causa as fases da Lua?", "o": ["Sombra da Terra", "Rotação do Sol", "Posição relativa Terra/Sol", "Nuvens"], "a": 2 },
+      { "q": "Quem descobriu a Penicilina?", "o": ["Alexander Fleming", "Louis Pasteur", "Marie Curie", "Gregor Mendel"], "a": 0 },
+      { "q": "Qual a relação onde ambos se beneficiam?", "o": ["Parasitismo", "Mutualismo", "Comensalismo", "Predação"], "a": 1 },
+      { "q": "Qual o elemento químico mais abundante no universo?", "o": ["Oxigênio", "Carbono", "Hélio", "Hidrogênio"], "a": 3 },
+      { "q": "Quem é o 'pai' da corrente alternada?", "o": ["Edison", "Tesla", "Franklin", "Galvani"], "a": 1 },
+      { "q": "Qual doença é transmitida pelo Aedes aegypti?", "o": ["Malária", "Dengue", "Doença de Chagas", "Gripe"], "a": 1 },
+      { "q": "Qual é a substância natural mais dura que existe?", "o": ["Ouro", "Ferro", "Diamante", "Quartzo"], "a": 2 },
+      { "q": "Qual planeta tem os anéis mais visíveis?", "o": ["Júpiter", "Urano", "Saturno", "Netuno"], "a": 2 },
+      { "q": "O que estuda a Meteorologia?", "o": ["Meteoros", "Tempo e Clima", "Rochas", "Estrelas"], "a": 1 }
+    ],
+    "dificil": [
+      { "q": "O que compõe o núcleo de um átomo?", "o": ["Apenas elétrons", "Prótons e nêutrons", "Nêutrons e elétrons", "Apenas prótons"], "a": 1 },
+      { "q": "Quantos pares de cromossomos tem um humano?", "o": ["20", "23", "46", "22"], "a": 1 },
+      { "q": "Cientista que ganhou dois Nobel em áreas diferentes:", "o": ["Einstein", "Marie Curie", "Pauling", "Newton"], "a": 1 },
+      { "q": "Qual é a camada mais interna da Terra?", "o": ["Crosta", "Manto", "Núcleo", "Litosfera"], "a": 2 },
+      { "q": "Qual é a galáxia mais próxima da Via Láctea?", "o": ["Andrômeda", "Sombreiro", "Triângulo", "Magalhães"], "a": 0 },
+      { "q": "O que é um animal monotremado?", "o": ["Mamífero que põe ovos", "Ave que não voa", "Peixe que respira fora", "Répteis gigantes"], "a": 0 },
+      { "q": "O que mede a escala Kelvin?", "o": ["Som", "Temperatura absoluta", "Pressão", "Luminosidade"], "a": 1 },
+      { "q": "Qual é o símbolo químico do Ouro?", "o": ["Ag", "Fe", "Au", "Pb"], "a": 2 },
+      { "q": "Quem é considerado o pai da Genética?", "o": ["Darwin", "Mendel", "Watson", "Crick"], "a": 1 },
+      { "q": "Qual o ponto de congelamento da água em Fahrenheit?", "o": ["0°F", "32°F", "100°F", "212°F"], "a": 1 }
+    ],
+    "muito_dificil": [
+      { "q": "Quantos elementos tem a tabela periódica?", "o": ["108", "112", "118", "124"], "a": 2 },
+      { "q": "Partícula mediadora da força eletromagnética:", "o": ["Gluon", "Fóton", "Gráviton", "Bóson"], "a": 1 },
+      { "q": "O que descreve a 2ª Lei da Termodinâmica?", "o": ["Inércia", "Aumento da entropia", "Conservação", "Ação/Reação"], "a": 1 },
+      { "q": "Qual elemento químico tem o número atômico 1?", "o": ["Hélio", "Oxigênio", "Carbono", "Hidrogênio"], "a": 3 },
+      { "q": "Qual organela celular tem seu próprio DNA?", "o": ["Lisossomo", "Ribossomo", "Mitocôndria", "Golgi"], "a": 2 },
+      { "q": "Qual a constante da velocidade da luz (c)?", "o": ["299.792.458 m/s", "300.000.000 m/s", "150.000.000 m/s", "1.000.000 m/s"], "a": 0 },
+      { "q": "Qual é a principal função dos glóbulos brancos?", "o": ["Transportar O2", "Coagulação", "Defesa imunitária", "Hormônios"], "a": 2 },
+      { "q": "O que é o 'Horizonte de Eventos'?", "o": ["Borda de buraco negro", "Fim do universo", "Explosão estelar", "Nascimento"], "a": 0 },
+      { "q": "Qual ácido é encontrado no estômago?", "o": ["Sulfúrico", "Nítrico", "Clorídrico", "Acético"], "a": 2 },
+      { "q": "Era geológica dos Dinossauros:", "o": ["Paleozoica", "Mesozoica", "Cenozoica", "Arqueozoica"], "a": 1 }
+    ],
+    "extremo": [
+      { "q": "O que descreve o 'Princípio da Incerteza'?", "o": ["Evolução de ecossistema", "Impossibilidade de determinar posição/momento", "Dilatação do tempo", "Buracos negros"], "a": 1 },
+      { "q": "Qual organela é responsável pela 'Apoptose'?", "o": ["Golgi", "Lisossomo", "Ribossomo", "Vacúolo"], "a": 1 },
+      { "q": "Qual elemento possui a maior eletronegatividade?", "o": ["Oxigênio", "Flúor", "Frâncio", "Cloro"], "a": 1 },
+      { "q": "Lei que estabelece que a entropia tende a aumentar:", "o": ["1ª Lei", "2ª Lei", "3ª Lei", "Lei Zero"], "a": 1 },
+      { "q": "O que é um 'Príon' na biologia molecular?", "o": ["Vírus de RNA", "Proteína infectante", "DNA bacteriano", "Enzima"], "a": 1 }
+    ]
+  },
+  "Entretenimento": {
+    "muito_facil": [
+      { "q": "Quem é o mascote oficial da Disney?", "o": ["Pato Donald", "Pateta", "Mickey Mouse", "Pluto"], "a": 2 },
+      { "q": "Qual o nome verdadeiro do Homem-Aranha?", "o": ["Bruce Wayne", "Tony Stark", "Peter Parker", "Clark Kent"], "a": 2 },
+      { "q": "Quem é conhecido como o 'Rei do Pop'?", "o": ["Elvis Presley", "Michael Jackson", "Freddie Mercury", "Prince"], "a": 1 },
+      { "q": "Qual o encanador mais famoso dos games?", "o": ["Sonic", "Mario", "Luigi", "Link"], "a": 1 },
+      { "q": "Qual a escola de magia de Harry Potter?", "o": ["Nárnia", "Hogwarts", "Terra Média", "Gotham"], "a": 1 },
+      { "q": "Qual rede social é famosa por fotos e filtros?", "o": ["X", "Facebook", "Instagram", "TikTok"], "a": 2 },
+      { "q": "Onde assistimos filmes em telas gigantes?", "o": ["Estádio", "Teatro", "Cinema", "Museu"], "a": 2 },
+      { "q": "Qual plataforma é famosa por dancinhas?", "o": ["WhatsApp", "LinkedIn", "TikTok", "Reddit"], "a": 2 },
+      { "q": "Qual super-herói usa um martelo Mjolnir?", "o": ["Hulk", "Thor", "Batman", "Flash"], "a": 1 },
+      { "q": "Qual o nome do melhor amigo do Bob Esponja?", "o": ["Patrick", "Lula Molusco", "Sandy", "Gary"], "a": 0 }
+    ],
+    "facil": [
+      { "q": "Qual filme de 1998 ganhou 11 Oscars?", "o": ["Titanic", "Avatar", "Tubarão", "O Náufrago"], "a": 0 },
+      { "q": "Em qual cidade o Batman vive?", "o": ["Metrópolis", "Central City", "Gotham City", "Star City"], "a": 2 },
+      { "q": "Banda com o vocalista Freddie Mercury:", "o": ["Beatles", "Pink Floyd", "Queen", "Led Zeppelin"], "a": 2 },
+      { "q": "Qual console é da empresa Nintendo?", "o": ["PlayStation", "Xbox", "Switch", "Dreamcast"], "a": 2 },
+      { "q": "Qual herói é o bilionário Tony Stark?", "o": ["Batman", "Homem de Ferro", "Pantera Negra", "Capitão América"], "a": 1 },
+      { "q": "Quem é o vilão principal de Star Wars (Pai de Luke)?", "o": ["Palpatine", "Darth Maul", "Darth Vader", "Kylo Ren"], "a": 2 },
+      { "q": "Qual o serviço de streaming mais famoso?", "o": ["Spotify", "Netflix", "YouTube", "Deezer"], "a": 1 },
+      { "q": "Qual princesa tem um sapatinho de cristal?", "o": ["Branca de Neve", "Bela", "Cinderela", "Ariel"], "a": 2 },
+      { "q": "Qual filme tem um bilhete dourado no chocolate?", "o": ["Matilda", "A Fantástica Fábrica", "Shrek", "Harry Potter"], "a": 1 },
+      { "q": "Quem é o autor de 'O Senhor dos Anéis'?", "o": ["J.K. Rowling", "George R.R. Martin", "J.R.R. Tolkien", "C.S. Lewis"], "a": 2 }
+    ],
+    "medio": [
+      { "q": "Qual cantora é conhecida como 'Queen Bey'?", "o": ["Rihanna", "Beyoncé", "Madonna", "Lady Gaga"], "a": 1 },
+      { "q": "Quem dirigiu 'Pulp Fiction'?", "o": ["Spielberg", "Nolan", "Tarantino", "Scorsese"], "a": 2 },
+      { "q": "Oscar póstumo pelo Coringa em 2009:", "o": ["Joaquin Phoenix", "Heath Ledger", "Jack Nicholson", "Jared Leto"], "a": 1 },
+      { "q": "Em qual série vemos a cidade de Hawkins?", "o": ["Dark", "Stranger Things", "Lost", "Elite"], "a": 1 },
+      { "q": "Qual o nome real da cantora Lady Gaga?", "o": ["Stefani Germanotta", "Robyn Fenty", "Katy Hudson", "Alecia Moore"], "a": 0 },
+      { "q": "Maior bilheteria da história (sem inflação):", "o": ["Titanic", "Avatar", "Vingadores: Ultimato", "E.T."], "a": 1 },
+      { "q": "Qual foi o primeiro vídeo do YouTube?", "o": ["Música", "Me at the zoo", "Trailers", "Gameplay"], "a": 1 },
+      { "q": "Qual o nome do elfo de Harry Potter?", "o": ["Dobby", "Kreacher", "Winky", "Golias"], "a": 0 },
+      { "q": "Jogo focado em comprar imóveis:", "o": ["Xadrez", "Banco Imobiliário", "War", "Scrabble"], "a": 1 },
+      { "q": "Quem criou o tema de 'Star Wars'?", "o": ["Hans Zimmer", "John Williams", "Danny Elfman", "Ennio Morricone"], "a": 1 }
+    ],
+    "dificil": [
+      { "q": "Primeiro longa-metragem animado da Disney:", "o": ["Pinóquio", "Branca de Neve", "Fantasia", "Bambi"], "a": 1 },
+      { "q": "Quem era o guitarrista do Guns N' Roses?", "o": ["Slash", "Eddie Van Halen", "Brian May", "Jimmy Page"], "a": 0 },
+      { "q": "Vencedor do 1º Oscar de Melhor Filme (1929):", "o": ["O Cantor de Jazz", "Asas (Wings)", "Aurora", "Metrópolis"], "a": 1 },
+      { "q": "Qual série recordista de Emmys foca em Westeros?", "o": ["Breaking Bad", "Game of Thrones", "Mad Men", "The Sopranos"], "a": 1 },
+      { "q": "Qual cantora tem o recorde de mais Grammys?", "o": ["Beyoncé", "Taylor Swift", "Adele", "Madonna"], "a": 0 },
+      { "q": "Quem é o autor de 'Sherlock Holmes'?", "o": ["Agatha Christie", "Arthur Conan Doyle", "Edgar Allan Poe", "Stephen King"], "a": 1 },
+      { "q": "Qual foi o 1º videogame comercial (1972)?", "o": ["Pac-Man", "Pong", "Space Invaders", "Asteroids"], "a": 1 },
+      { "q": "Quem escreveu a peça 'Hamlet'?", "o": ["Cervantes", "Shakespeare", "Dante", "Machado de Assis"], "a": 1 },
+      { "q": "Nome do robô de 'Interestelar':", "o": ["R2-D2", "TARS", "HAL 9000", "Wall-E"], "a": 1 },
+      { "q": "Banda que lançou 'The Dark Side of the Moon':", "o": ["Led Zeppelin", "The Beatles", "Pink Floyd", "The Rolling Stones"], "a": 2 }
+    ],
+    "muito_dificil": [
+      { "q": "Quem dirigiu 'Cidadão Kane' (1941)?", "o": ["Hitchcock", "Orson Welles", "John Ford", "Howard Hawks"], "a": 1 },
+      { "q": "Qual artista pintou 'O Nascimento de Vênus'?", "o": ["Da Vinci", "Botticelli", "Michelangelo", "Rafael"], "a": 1 },
+      { "q": "Quantas sinfonias Beethoven escreveu?", "o": ["5", "7", "9", "12"], "a": 2 },
+      { "q": "Atriz que ganhou 4 Oscars de Melhor Atriz:", "o": ["Meryl Streep", "Katharine Hepburn", "Ingrid Bergman", "Cate Blanchett"], "a": 1 },
+      { "q": "Quem escreveu 'Em Busca do Tempo Perdido'?", "o": ["James Joyce", "Marcel Proust", "Franz Kafka", "Tolstoi"], "a": 1 },
+      { "q": "Qual foi o primeiro filme falado?", "o": ["Mágico de Oz", "O Cantor de Jazz", "Luzes da Cidade", "Ditador"], "a": 1 },
+      { "q": "Quem escreveu 'As Quatro Estações'?", "o": ["Bach", "Mozart", "Vivaldi", "Chopin"], "a": 2 },
+      { "q": "Série de maior duração (em episódios):", "o": ["Simpsons", "Grey's Anatomy", "Doctor Who", "Sesame Street"], "a": 2 },
+      { "q": "Guitarrista famoso por tocar com os dentes:", "o": ["Eric Clapton", "Jimi Hendrix", "Keith Richards", "B.B. King"], "a": 1 },
+      { "q": "Nome real do Coringa no filme de 2019:", "o": ["Jack Napier", "Arthur Fleck", "Joe Chill", "Thomas Wayne"], "a": 1 }
+    ],
+    "extremo": [
+      { "q": "Nome de Gollum antes de ser corrompido:", "o": ["Déagol", "Sméagol", "Celebrimbor", "Isildur"], "a": 1 },
+      { "q": "1º jogo a apresentar Mario (como Jumpman):", "o": ["Super Mario Bros.", "Donkey Kong (1981)", "Pac-Man", "Mario Clash"], "a": 1 },
+      { "q": "Termo para humanos artificiais em 'Blade Runner':", "o": ["Ciborgues", "Replicantes", "Androids", "Sintéticos"], "a": 1 },
+      { "q": "Álbum mais vendido de todos os tempos mundialmente:", "o": ["Back in Black", "Thriller", "Dark Side of the Moon", "Rumours"], "a": 1 },
+      { "q": "Quem dirigiu 'Nosferatu' (1922)?", "o": ["Fritz Lang", "F.W. Murnau", "Alfred Hitchcock", "Robert Wiene"], "a": 1 }
+    ]
+  },
+  "Arte": {
+    "muito_facil": [
+      { "q": "Quem pintou a Mona Lisa?", "o": ["Picasso", "Da Vinci", "Van Gogh", "Dalí"], "a": 1 },
+      { "q": "Qual a arte de fazer estátuas?", "o": ["Pintura", "Música", "Escultura", "Dança"], "a": 2 },
+      { "q": "Quais as cores primárias?", "o": ["Verde/Roxo", "Vermelho/Azul/Amarelo", "Preto/Branco", "Rosa/Marrom"], "a": 1 },
+      { "q": "Qual a arte do teatro?", "o": ["Pintura", "Dramaturgia", "Culinária", "Esporte"], "a": 1 },
+      { "q": "Arte de capturar imagens com luz:", "o": ["Pintura", "Cinema", "Fotografia", "Gravura"], "a": 2 },
+      { "q": "Qual instrumento tem teclas pretas/brancas?", "o": ["Violão", "Flauta", "Piano", "Bateria"], "a": 2 },
+      { "q": "Qual instrumento se toca com um arco?", "o": ["Violino", "Harpa", "Trompete", "Saxofone"], "a": 0 },
+      { "q": "Dança clássica com sapatilhas de ponta:", "o": ["Hip Hop", "Samba", "Ballet", "Jazz"], "a": 2 },
+      { "q": "Museu em Paris com formato de pirâmide:", "o": ["Prado", "Britânico", "Louvre", "MET"], "a": 2 },
+      { "q": "Qual a arte de projetar prédios?", "o": ["Engenharia", "Arquitetura", "Design", "Decoração"], "a": 1 }
+    ],
+    "facil": [
+      { "q": "Quem pintou os Girassóis?", "o": ["Da Vinci", "Van Gogh", "Picasso", "Monet"], "a": 1 },
+      { "q": "Em qual cidade fica o Cristo Redentor?", "o": ["São Paulo", "Belo Horizonte", "Rio de Janeiro", "Salvador"], "a": 2 },
+      { "q": "Quem esculpiu o Davi em mármore?", "o": ["Da Vinci", "Michelangelo", "Donatello", "Bernini"], "a": 1 },
+      { "q": "Movimento de pontos coloridos (Seurat):", "o": ["Surrealismo", "Impressionismo", "Pós-Impressionismo", "Cubismo"], "a": 2 },
+      { "q": "Pintora mexicana famosa por autorretratos:", "o": ["Tarsila", "Frida Kahlo", "Anita Malfatti", "Carmen"], "a": 1 },
+      { "q": "Estátua presente da França para os EUA:", "o": ["Cristo", "Liberdade", "Torre Eiffel", "Esfinge"], "a": 1 },
+      { "q": "Estilo que foca no subconsciente/sonhos:", "o": ["Realismo", "Surrealismo", "Barroco", "Clássico"], "a": 1 },
+      { "q": "Estilo da Catedral de Notre Dame:", "o": ["Barroco", "Gótico", "Renascentista", "Moderno"], "a": 1 },
+      { "q": "Quem pintou 'O Grito'?", "o": ["Van Gogh", "Edvard Munch", "Dalí", "Mondrian"], "a": 1 },
+      { "q": "Quem escreveu 'As Quatro Estações'?", "o": ["Bach", "Beethoven", "Vivaldi", "Mozart"], "a": 2 }
+    ],
+    "medio": [
+      { "q": "Qual o movimento de Picasso?", "o": ["Impressionismo", "Cubismo", "Futurismo", "Dadaísmo"], "a": 1 },
+      { "q": "Quem pintou a Capela Sistina?", "o": ["Da Vinci", "Rafael", "Michelangelo", "Boticcelli"], "a": 2 },
+      { "q": "Artista famoso pelos relógios derretidos:", "o": ["Magritte", "Salvador Dalí", "Picasso", "Miró"], "a": 1 },
+      { "q": "Artista brasileira que pintou 'Abaporu':", "o": ["Frida", "Tarsila do Amaral", "Anita", "Tomie"], "a": 1 },
+      { "q": "O que é um Afresco?", "o": ["Tela", "Pintura em gesso úmido", "Gelo", "Lápis"], "a": 1 },
+      { "q": "Pintor famoso pelo Chiaroscuro:", "o": ["Vermeer", "Rembrandt", "Mondrian", "Van Gogh"], "a": 1 },
+      { "q": "Estilo marcado pelo exagero (Igrejas):", "o": ["Gótico", "Barroco", "Renascentista", "Modernista"], "a": 1 },
+      { "q": "Estilo de Mondrian (Cores primárias):", "o": ["Cubismo", "De Stijl", "Pop Art", "Bauhaus"], "a": 1 },
+      { "q": "O que é o 'Partenon'?", "o": ["Igreja", "Templo em Atenas", "Palácio", "Teatro"], "a": 1 },
+      { "q": "Fotógrafo brasileiro de fotos sociais em P&B:", "o": ["Vik Muniz", "Sebastião Salgado", "Araquém", "Bob"], "a": 1 }
+    ],
+    "dificil": [
+      { "q": "Quadro de Picasso sobre bombardeio espanhol:", "o": ["Persistência", "Guernica", "O Beijo", "Noite Estrelada"], "a": 1 },
+      { "q": "Pintor impressionista que amava ninféias:", "o": ["Renoir", "Degas", "Manet", "Claude Monet"], "a": 3 },
+      { "q": "Quem projetou Brasília?", "o": ["Burle Marx", "Niemeyer e Lúcio Costa", "Le Corbusier", "Lina"], "a": 1 },
+      { "q": "Quem esculpiu 'O Pensador'?", "o": ["Bernini", "Rodin", "Moore", "Canova"], "a": 1 },
+      { "q": "Técnica de Da Vinci (efeito esfumaçado):", "o": ["Pontilhismo", "Sfumato", "Impasto", "Afresco"], "a": 1 },
+      { "q": "Quem escreveu a ópera 'O Guarani'?", "o": ["Villa-Lobos", "Carlos Gomes", "Tom Jobim", "Chiquinha"], "a": 1 },
+      { "q": "Artista do 'Ready-made' (Urinol):", "o": ["Andy Warhol", "Marcel Duchamp", "Dalí", "Banksy"], "a": 1 },
+      { "q": "Escola de design da Alemanha (1919):", "o": ["Renascença", "Bauhaus", "Art Nouveau", "Beaux-Arts"], "a": 1 },
+      { "q": "Quem pintou 'O Nascimento de Vênus'?", "o": ["Botticelli", "Rafael", "Tiziano", "Caravaggio"], "a": 0 },
+      { "q": "Quem escreveu 'Esperando Godot'?", "o": ["Shakespeare", "Samuel Beckett", "Molière", "Nelson"], "a": 1 }
+    ],
+    "muito_dificil": [
+      { "q": "Estilo de arquitetura de Antoni Gaudí:", "o": ["Gótico", "Barroco", "Modernismo Catalão", "Neoclássico"], "a": 2 },
+      { "q": "Quem esculpiu 'O Êxtase de Santa Teresa'?", "o": ["Donatello", "Bernini", "Canova", "Michelangelo"], "a": 1 },
+      { "q": "Pintor espanhol mestre do 'Maneirismo':", "o": ["Velázquez", "Goya", "El Greco", "Murillo"], "a": 2 },
+      { "q": "Artista famoso pelas caveiras com diamantes:", "o": ["Jeff Koons", "Damien Hirst", "Banksy", "Ai Weiwei"], "a": 1 },
+      { "q": "Qual arquiteto criou a 'Casa da Cascata'?", "o": ["Frank Lloyd Wright", "Mies van der Rohe", "Niemeyer", "Gropius"], "a": 0 },
+      { "q": "Qual artista russa é pioneira do abstracionismo?", "o": ["Natalia", "Kandinsky", "Malevich", "Hilma af Klint"], "a": 1 },
+      { "q": "Quem escreveu 'Casa de Bonecas'?", "o": ["Strindberg", "Ibsen", "Chekhov", "Brecht"], "a": 1 },
+      { "q": "Provável nome real de 'Banksy':", "o": ["Robert Del Naja", "Desconhecido", "Robin Gunningham", "Nenhuma"], "a": 1 },
+      { "q": "Técnica de pintura de Jackson Pollock:", "o": ["Sfumato", "Drip Painting", "Aquarela", "Guache"], "a": 1 },
+      { "q": "Quem pintou 'Las Meninas'?", "o": ["Goya", "Diego Velázquez", "Picasso", "El Greco"], "a": 1 }
+    ],
+    "extremo": [
+      { "q": "Barroco italiano mestre do Chiaroscuro:", "o": ["Michelangelo", "Caravaggio", "Bernini", "Botticelli"], "a": 1 },
+      { "q": "Movimento liderado por André Breton:", "o": ["Cubismo", "Surrealismo", "Dadaísmo", "Futurismo"], "a": 1 },
+      { "q": "Cidade da ópera 'Teatro alla Scala':", "o": ["Viena", "Milão", "Paris", "Veneza"], "a": 1 },
+      { "q": "Artista dos pontos Ben-Day (Estética HQ):", "o": ["Andy Warhol", "Roy Lichtenstein", "Keith Haring", "Jasper Johns"], "a": 1 },
+      { "q": "Quem projetou a cúpula da Catedral de Florença?", "o": ["Da Vinci", "Filippo Brunelleschi", "Donatello", "Alberti"], "a": 1 }
+    ]
+  }
+}
