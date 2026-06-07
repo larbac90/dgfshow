@@ -201,7 +201,7 @@
             <h1 style="font-size: 3.5rem; margin-bottom: 10px;">DGF SHOW 🔔</h1>
             <p style="opacity: 0.7; margin-bottom: 30px;">MODO GINCANA</p>
             <div class="file-input-wrapper">
-                <input type="file" id="input-json" accept=".json">
+                <p id="loading-text">Carregando perguntas automaticamente...</p>
             </div>
             <button id="btn-start-game" class="main-btn" style="display:none;" onclick="startGame()">Iniciar 🚀</button>
         </div>
@@ -218,7 +218,6 @@
                 </div>
             </div>
 
-            <!-- Roleta Copiada Inserida Aqui -->
             <div id="roulette-wrapper">
                 <div id="wheel-marker"></div>
                 <svg id="wheel-svg" viewBox="0 0 100 100">
@@ -228,7 +227,6 @@
                 </svg>
             </div>
 
-            <!-- Bloco de perguntas agrupado para controle de exibição dinâmica -->
             <div id="quiz-content-block" class="content-hidden">
                 <div class="timer-display idle" id="timer">15</div>
                 <div class="question-box" id="question-text"></div>
@@ -275,18 +273,26 @@
             "muito_dificil"
         ];
 
-        document.getElementById('input-json').addEventListener('change', function(e) {
-            const file = e.target.files[0];
-            if (!file) return;
-            const reader = new FileReader();
-            reader.onload = function(event) {
-                try {
-                    data = JSON.parse(event.target.result);
+        // CARREGAMENTO AUTOMÁTICO VIA GITHUB
+        // Substitua 'perguntas.json' pelo nome exato do seu arquivo caso ele tenha outro nome
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('perguntas.json') 
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Erro ao carregar o arquivo JSON automaticamente.");
+                    }
+                    return response.json();
+                })
+                .then(jsonData => {
+                    data = jsonData;
                     allThemes = Object.keys(data);
+                    document.getElementById('loading-text').textContent = "Perguntas carregadas com sucesso! 🎉";
                     document.getElementById('btn-start-game').style.display = "inline-block";
-                } catch (err) { alert("Erro no JSON."); }
-            };
-            reader.readAsText(file);
+                })
+                .catch(err => { 
+                    document.getElementById('loading-text').textContent = "Erro ao carregar perguntas automaticamente.";
+                    alert("Erro ao buscar o arquivo JSON no repositório: " + err.message); 
+                });
         });
 
         function startGame() {
